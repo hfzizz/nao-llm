@@ -5,7 +5,7 @@
 # nao-llm
 This project focuses on integrating a fine-tuned model with Retrieval-Augmented Generation (RAG) for a Large Language Model (LLM) to enable communication with the NAO Robot. The integration allows the robot to respond, interpret commands, perform actions based on emotional context, and understand Malay language.
 
-<h1 align="center"> Pacman Agent </h1>
+<h1 align="center"> NAO LLM </h1>
 <h3 align="center">  ZA 3201- Intelligent System Lab </h3>
 <h5 align="center"> Group Project - <a href="https://ubd.edu.bn/">Universiti Brunie Darussalam</a> </h5>
 
@@ -39,10 +39,14 @@ This project aims to enhance the NAO Robot's interaction capabilities by integra
 <h2 id="overview"> :cloud: Overview</h2>
 
 <p align="justify"> 
-Goal: To develop a communication system for the NAO Robot, enabling it to process speech, interpret emotional context, and respond in Malay. The system allows the robot to engage in meaningful interactions, perform contextual actions, and carry out commands.
+<ul>Goal: To develop a communication system for the NAO Robot, enabling it to process speech, interpret emotional context, and respond in Malay. The system allows the robot to engage in meaningful interactions, perform contextual actions, and carry out commands.
+</ul>
+
+<ul>
 Team:
 Hafiz: Responsible for communication with the NAO Robot, including robot API integration, speech-to-text, text-to-speech, and body control for executing actions.
 Gani & Edric: Focus on integrating the LLM, handling contextual understanding, and developing AI-driven conversation flows for a responsive and contextually aware experience.
+</ul>
 </p>
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
