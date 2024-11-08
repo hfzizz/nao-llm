@@ -73,7 +73,7 @@ Gani & Edric: Focus on integrating the LLM, handling contextual understanding, a
 <!-- GETTING STARTED -->
 <h2 id="getting-started"> :book: Getting Started</h2>
 <p align="justify"> 
-This project was originally inspired by [NAO Meets GPT](https://github.com/fabianbosshard/nao_meets_gpt), which provided valuable insights and ideas during development. 
+This project was originally inspired by <a href="https://github.com/fabianbosshard/nao_meets_gpt">NAO Meets GPT</a>, which provided valuable insights and ideas during development. 
   
 <h3>Requirements</h3>
 <ul>
