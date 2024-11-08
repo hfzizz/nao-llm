@@ -73,7 +73,7 @@ Team:
 <!-- GETTING STARTED -->
 <h2 id="getting-started"> :book: Getting Started</h2>
 
-This project was originally inspired by <a href="https://github.com/fabianbosshard/nao_meets_gpt">NAO Meets GPT</a>, which provided valuable insights and ideas during development. 
+This project was originally inspired by <a href="https://github.com/fabianbosshard/nao_meets_gpt">NAO Meets GPT</a>, which provided valuable insights and ideas during development. And also <a href="https://github.com/SYSTRAN/faster-whisper">Faster Whisper</a> for a local text-to-speech (TTS) model.
   
 <h3>Requirements</h3>
 <ul>
@@ -98,6 +98,8 @@ This project was originally inspired by <a href="https://github.com/fabianbossha
     <li>
         <strong>Install Dependencies</strong>: Ensure all required Python libraries are installed in your environments.
     </li>
+  <li>
+       (Optional, only if using Whisper) Install NVIDIA libraries such as cuBLAS and cuDNN. can refer <a href="https://github.com/SYSTRAN/faster-whisper">here</a>
 </ol>
 
 
