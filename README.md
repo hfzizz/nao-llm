@@ -102,5 +102,11 @@ This project was originally inspired by <a href="https://github.com/fabianbossha
        (Optional, only if using Whisper) Install NVIDIA libraries such as cuBLAS and cuDNN. can refer <a href="https://github.com/SYSTRAN/faster-whisper">here</a>
 </ol>
 
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+
+<!-- ACKNOWLEDGEMENTS -->
+<h2 id="acknowledgements"> 📜: Acknowledgements</h2>
+This project includes references to external works and resources. For a complete list of citations, please see [CITATIONS.md](CITATIONS.md).
 
 
