@@ -1,10 +1,13 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
-
-@misc{naomeetsgpt2023,
-  author = {Bosshard, Fabian and Meseret, Milion},
-  title = {{NAO Meets GPT}},
-  howpublished = {Project Thesis, Zurich University of Applied Sciences},
-  year = {2023},
-  url = {https://github.com/fabianbosshard/nao_meets_gpt/blob/main/project_thesis_corrected.pdf}
-}
+type: software
+authors:
+  - family-names: Bosshard
+    given-names: Fabian
+  - family-names: Meseret
+    given-names: Milion
+title: "NAO Meets GPT"
+year: 2023
+url: "https://github.com/fabianbosshard/nao_meets_gpt/blob/main/project_thesis_corrected.pdf"
+repository-code: "https://github.com/fabianbosshard/nao_meets_gpt"
+version: "1.0.0"
