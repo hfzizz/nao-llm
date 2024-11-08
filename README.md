@@ -19,7 +19,7 @@ This project focuses on integrating a fine-tuned model with Retrieval-Augmented 
     <li><a href="#overview"> ➤ Overview</a></li>
     <li><a href="#project-files-description"> ➤ Project Files Description</a></li>
     <li><a href="#getting-started"> ➤ Getting Started</a></li>
-    <li><a href="#references"> ➤ References</a></li>
+    <li><a href="#aknowlegdements"> ➤ References</a></li>
     <li><a href="#contributions"> ➤ Contributions</a></li>
   </ol>
 </details>
@@ -106,7 +106,7 @@ This project was originally inspired by <a href="https://github.com/fabianbossha
 
 
 <!-- ACKNOWLEDGEMENTS -->
-<h2 id="acknowledgements"> 📜: Acknowledgements</h2>
+<h2 id="acknowledgements"> 📜 Acknowledgements</h2>
 This project includes references to external works and resources. For a complete list of citations, please see <a href="CITATIONS.md">citations</a>
 
 
