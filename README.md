@@ -85,9 +85,20 @@ This project was originally inspired by <a href="https://github.com/fabianbossha
 </ul>
 
 <h3>Setup</h3>
-1. **Install the NAO Python SDK**: Follow the instructions [here](https://support.aldebaran.com/support/solutions/articles/80001017327-python-sdk-installation-guide) to install the NAO Python SDK.
-2. **Python Environments**: Create two separate Python environments, one for the server component and one for the client component. The server component requires Python 2.7, while the client component requires Python 3.x. The specific Python versions and library versions used for each component are listed [here](requirements.txt).
-3. **Install Dependencies**: Ensure all required Python libraries are installed in your environments.
-</p>
+<ol>
+    <li>
+        Install the NAO Python SDK: Follow the instructions 
+        <a href="https://support.aldebaran.com/support/solutions/articles/80001017327-python-sdk-installation-guide">here</a> 
+        to install the NAO Python SDK.
+    </li>
+    <li>
+        <strong>Python Environments</strong>: Create two separate Python environments, one for the server component and one for the client component. The server component requires Python 2.7, while the client component requires Python 3.x. The specific Python versions and library versions used for each component are listed 
+        <a href="requirements.txt">here</a>.
+    </li>
+    <li>
+        <strong>Install Dependencies</strong>: Ensure all required Python libraries are installed in your environments.
+    </li>
+</ol>
+
 
 
