@@ -95,6 +95,9 @@ This project was originally inspired by <a href="https://github.com/fabianbossha
         <strong>Python Environments</strong>: Create two separate Python environments, one for the server component and one for the client component. The server component requires Python 2.7, while the client component requires Python 3.x. The specific Python versions and library versions used for each component are listed 
         <a href="requirements.txt">here</a>.
     </li>
+  <li>
+        <strong>Install Local LLM</strong>: We use <a href="https://ollama.com/download">Ollama</a> in this case (llama3.2:1B)
+    </li>
     <li>
         <strong>Install Dependencies</strong>: Ensure all required Python libraries are installed in your environments.
     </li>
