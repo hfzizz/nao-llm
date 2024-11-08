@@ -73,14 +73,16 @@ Gani & Edric: Focus on integrating the LLM, handling contextual understanding, a
 <!-- GETTING STARTED -->
 <h2 id="getting-started"> :book: Getting Started</h2>
 <p align="justify"> 
-This project was originally inspired by [NAO Meets GPT](https://github.com/fabianbosshard/nao_meets_gpt/tree/main), which provided valuable insights and ideas during development. 
+This project was originally inspired by [NAO Meets GPT](https://github.com/fabianbosshard/nao_meets_gpt), which provided valuable insights and ideas during development. 
   
 <h3>Requirements</h3>
-- NAO Robot
-- NAO Python SDK
-- Python 3.x environment (for client component)
-- Python 2.7 environment (for server component)
-- Azure OpenAI API key for GPT access
+<ul>
+  <li>NAO Robot</li>
+  <li>NAO Python SDK</li>
+  <li>Python 3.x environment (for pc_w_malay_sr.py)</li>
+  <li>Python 2.7 environment (for nao_talk.py)</li>
+  <li>Any Local LLM (We use Ollama)</li>
+</ul>
 
 ### Setup
 1. **Install the NAO Python SDK**: Follow the instructions [here](https://support.aldebaran.com/support/solutions/articles/80001017327-python-sdk-installation-guide) to install the NAO Python SDK.
