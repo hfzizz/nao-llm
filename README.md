@@ -68,11 +68,11 @@ Team:
 </ul>
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-<!-- GETTING STARTED -->
+
 
 <!-- GETTING STARTED -->
 <h2 id="getting-started"> :book: Getting Started</h2>
-<p align="justify"> 
+
 This project was originally inspired by <a href="https://github.com/fabianbosshard/nao_meets_gpt">NAO Meets GPT</a>, which provided valuable insights and ideas during development. 
   
 <h3>Requirements</h3>
@@ -84,7 +84,7 @@ This project was originally inspired by <a href="https://github.com/fabianbossha
   <li>Any Local LLM (We use Ollama)</li>
 </ul>
 
-### Setup
+<h3>Setup</h3>
 1. **Install the NAO Python SDK**: Follow the instructions [here](https://support.aldebaran.com/support/solutions/articles/80001017327-python-sdk-installation-guide) to install the NAO Python SDK.
 2. **Python Environments**: Create two separate Python environments, one for the server component and one for the client component. The server component requires Python 2.7, while the client component requires Python 3.x. The specific Python versions and library versions used for each component are listed [here](requirements.txt).
 3. **Install Dependencies**: Ensure all required Python libraries are installed in your environments.
