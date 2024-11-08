@@ -1,5 +1,5 @@
 <p align="center"> 
-  <img src="gif/Pacman Logo2.jpg" alt="Nao" width="80px" height="80px">
+  <img src="pic/nao.png" alt="Nao" width="80px" height="80px">
 </p>
 
 # nao-llm
