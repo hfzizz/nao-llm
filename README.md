@@ -62,7 +62,7 @@ Team:
 <h3>Some other usefull files</h3>
 <ul>
   <li><b>Whispertts.py</b> - Same like pc_w_malay_sr.py but this uses Whisper as the TTS</li>
-  <li><b>Malayatts.py</b> - Same like pc_w_malay_sr.py but this uses malaya-speech as the TTS.</li>
+  <li><b>Malaytts.py</b> - Same like pc_w_malay_sr.py but this uses malaya-speech as the TTS.</li>
   <li><b>installed_behaviours.py</b> - Get all the installed behaviours on NAO.</li>
   <li><b>Testbehaviour.py</b> - Testing the installed behaviour on NAO.</li>
 </ul>
@@ -111,11 +111,13 @@ This project was originally inspired by <a href="https://github.com/fabianbossha
 <p><strong>Student 1:</strong></p>
 <ul>
   <li>Established wireless communication between PC and NAO, integrating the language model (LLM) for seamless interaction.</li>
-  <li>Developed functionality to trigger robot body behaviors from spoken words (e.g., "present yourself" to make the robot present itself).</li>
-  <li>Implemented advanced gesture and movement synchronization with spoken responses, such as head nodding for agreement and hand movements for emphasis.</li>
-  <li>Created a system that detects words from user input to trigger appropriate body behaviors, ensuring that the robot confirms the user’s goal before performing any movements.</li>
+  <li>Implemented advanced gesture and movement synchronization with spoken responses, such as waving when saying Hello!.</li>
+  <li>Created a system that detects words from user input to trigger appropriate body behaviors, ensuring that the robot confirms the user’s goal before performing any movements. (e.g., "Can you salute?" to make the robot do salute action) </li>
   <li>Worked collaboratively with the team to ensure body behaviors are accurately triggered based on conversational context.</li>
   <li>Developed a text-to-speech system that enables NAO to speak in Malay.</li>
+  <li>Local English TTS (Whisphertts.py).</li>
+  <li>Local Malay TTS (Malaytts.py).</li>
+  <li>Both Malay and English support (pc_w_malay_sr.py)</li>
 </ul>
 
 <p><strong>Student 2 & Student 3:</strong></p>
