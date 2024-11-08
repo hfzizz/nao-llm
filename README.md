@@ -44,8 +44,8 @@ This project aims to enhance the NAO Robot's interaction capabilities by integra
 
 <ul>
 Team:
-Hafiz: Responsible for communication with the NAO Robot, including robot API integration, speech-to-text, text-to-speech, and body control for executing actions.
-Gani & Edric: Focus on integrating the LLM, handling contextual understanding, and developing AI-driven conversation flows for a responsive and contextually aware experience.
+<li>Hafiz: Responsible for communication with the NAO Robot, including robot API integration, speech-to-text, text-to-speech, and body control for executing actions. </li>
+<li>Gani & Edric: Focus on integrating the LLM, handling contextual understanding, and developing AI-driven conversation flows for a responsive and contextually aware experience. </li>
 </ul>
 </p>
 
