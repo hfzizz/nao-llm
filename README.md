@@ -111,7 +111,7 @@ This project was originally inspired by <a href="https://github.com/fabianbossha
 <!-- CONTRIBUTION -->
 <h2 id="contribution">:small_orange_diamond: Team Contributions</h2>
 
-<p><strong>Student 1:</strong></p>
+<p><strong>Student 1 (Hafiz):</strong></p>
 <ul>
   <li>Established wireless communication between PC and NAO, integrating the language model (LLM) for seamless interaction.</li>
   <li>Implemented advanced gesture and movement synchronization with spoken responses, such as waving when saying Hello!.</li>
@@ -123,7 +123,7 @@ This project was originally inspired by <a href="https://github.com/fabianbossha
   <li>Both Malay and English support (pc_w_malay_sr.py)</li>
 </ul>
 
-<p><strong>Student 2 & Student 3:</strong></p>
+<p><strong>Student 2 & Student 3 (Gani & Edric):</strong></p>
 <ul>
   <li>Worked on enabling the LLM to maintain context-aware dialogues, ensuring consistent conversational context over multiple interactions.</li>
   <li>Gathered additional training data to enhance the system's ability to communicate about topics such as SDS, UBD, robotics, AI, and Brunei. Explored the possibility of using RAG-based systems for improved dialogue generation.</li>
