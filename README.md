@@ -73,7 +73,7 @@ Team:
 <!-- GETTING STARTED -->
 <h2 id="getting-started"> :book: Getting Started</h2>
 
-This project was originally inspired by <a href="https://github.com/fabianbosshard/nao_meets_gpt">NAO Meets GPT</a>, which provided valuable insights and ideas during development. And also <a href="https://github.com/SYSTRAN/faster-whisper">Faster Whisper</a> for a local text-to-speech (TTS) model.
+This project was originally inspired by <a href="https://github.com/fabianbosshard/nao_meets_gpt">NAO Meets GPT</a>, which provided valuable insights and ideas during development. And also <a href="https://github.com/SYSTRAN/faster-whisper">Faster Whisper</a> for a local text-to-speech (TTS) model and <a href="https://github.com/mesolitica/malaya-speech">malaya-speech/a>  for a local malay TTS.
   
 <h3>Requirements</h3>
 <ul>
