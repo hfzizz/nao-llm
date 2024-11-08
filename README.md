@@ -73,7 +73,7 @@ Team:
 <!-- GETTING STARTED -->
 <h2 id="getting-started"> :book: Getting Started</h2>
 
-This project was originally inspired by <a href="https://github.com/fabianbosshard/nao_meets_gpt">NAO Meets GPT</a>, which provided valuable insights and ideas during development. And also <a href="https://github.com/SYSTRAN/faster-whisper">Faster Whisper</a> for a local text-to-speech (TTS) model and <a href="https://github.com/mesolitica/malaya-speech">malaya-speech/a>  for a local malay TTS.
+This project was originally inspired by <a href="https://github.com/fabianbosshard/nao_meets_gpt">NAO Meets GPT</a>, which provided valuable insights and ideas during development. And also <a href="https://github.com/SYSTRAN/faster-whisper">Faster Whisper</a> for a local text-to-speech (TTS) model and <a href="https://github.com/mesolitica/malaya-speech"> malaya-speech</a>  for a local malay TTS.
   
 <h3>Requirements</h3>
 <ul>
@@ -104,6 +104,31 @@ This project was originally inspired by <a href="https://github.com/fabianbossha
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
+<!-- CONTRIBUTION -->
+<!-- CONTRIBUTION -->
+<h2 id="contribution">:small_orange_diamond: Team Contributions</h2>
+
+<p><strong>Student 1:</strong></p>
+<ul>
+  <li>Established wireless communication between PC and NAO, integrating the language model (LLM) for seamless interaction.</li>
+  <li>Developed functionality to trigger robot body behaviors from spoken words (e.g., "present yourself" to make the robot present itself).</li>
+  <li>Implemented advanced gesture and movement synchronization with spoken responses, such as head nodding for agreement and hand movements for emphasis.</li>
+  <li>Created a system that detects words from user input to trigger appropriate body behaviors, ensuring that the robot confirms the user’s goal before performing any movements.</li>
+  <li>Worked collaboratively with the team to ensure body behaviors are accurately triggered based on conversational context.</li>
+  <li>Developed a text-to-speech system that enables NAO to speak in Malay.</li>
+</ul>
+
+<p><strong>Student 2 & Student 3:</strong></p>
+<ul>
+  <li>Worked on enabling the LLM to maintain context-aware dialogues, ensuring consistent conversational context over multiple interactions.</li>
+  <li>Gathered additional training data to enhance the system's ability to communicate about topics such as SDS, UBD, robotics, AI, and Brunei. Explored the possibility of using RAG-based systems for improved dialogue generation.</li>
+  <li>Enabled extraction of action/expression-oriented words from the conversation, passing them on to Student 1 for triggering corresponding robot body behaviors.</li>
+  <li>Collaborated closely as a team to ensure the system functions cohesively and delivers smooth interaction.</li>
+  <li>Collected data on the Malay language to assess the potential for training the LLM to generate responses in Malay.</li>
+</ul>
+
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 <!-- ACKNOWLEDGEMENTS -->
 <h2 id="acknowledgements"> 📜 Acknowledgements</h2>
