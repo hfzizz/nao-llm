@@ -87,7 +87,7 @@ This project was originally inspired by <a href="https://github.com/fabianbossha
 <h3>Setup</h3>
 <ol>
     <li>
-        Install the NAO Python SDK: Follow the instructions 
+        Install the <a href="https://www.aldebaran.com/en/support/nao-6/downloads-softwares">NAO Python SDK</a>: Follow the instructions 
         <a href="https://support.aldebaran.com/support/solutions/articles/80001017327-python-sdk-installation-guide">here</a> 
         to install the NAO Python SDK.
     </li>
