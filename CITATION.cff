@@ -1,3 +1,6 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+
 @misc{naomeetsgpt2023,
   author = {Bosshard, Fabian and Meseret, Milion},
   title = {{NAO Meets GPT}},
