@@ -2,12 +2,10 @@ cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 type: software
 authors:
-  - family-names: Bosshard
-    given-names: Fabian
-  - family-names: Meseret
-    given-names: Milion
-title: "NAO Meets GPT"
-year: 2023
-url: "https://github.com/fabianbosshard/nao_meets_gpt/blob/main/project_thesis_corrected.pdf"
+  - family-names: Hafiz
+    given-names: Izzuddin
+title: "NAO-LLM"
+year: 2024
+url: "https://github.com/hfzizz/nao-llm"
 repository-code: "https://github.com/fabianbosshard/nao_meets_gpt"
 version: "1.0.0"
