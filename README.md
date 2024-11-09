@@ -114,7 +114,7 @@ This project was originally inspired by <a href="https://github.com/fabianbossha
 <h3>Installation and Running</h3>
 <ol>
     <li>
-      <strong>Scraping the Website</strong>:This script is a Scrapy Spider designed to crawl and scrape data from a list of websites.To scrape the website run below command line
+      <strong>Scraping the Website</strong>:To start scraping run below command line
       <pre><code>scrapy crawl website_scraper -o all_text_data.json </code></pre>
     </li>
 </ol>
