@@ -114,9 +114,9 @@ This project was originally inspired by <a href="https://github.com/fabianbossha
     <li> Setup python virtual environment for nao_talk.py</li>
       <pre><code>python -m venv venv27 </code></pre>
     <li> Activate the virtual environment </li>
-      <pre><code>venv27\Scripts\activate</pre>
+      <pre><code> venv27\Scripts\activate </code></pre>
     <li> Install dependencies. Make sure you cd to requirements folder </li>
-      <pre><code>pip install -r requirements_venv27.txt</code></pre>
+      <pre><code> pip install -r requirements_venv27.txt </code></pre>
     <li> Start the server </li>
       <pre><code>python nao_talk.py</code></pre>
 </ol>
