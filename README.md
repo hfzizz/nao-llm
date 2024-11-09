@@ -109,7 +109,7 @@ This project was originally inspired by <a href="https://github.com/fabianbossha
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
-<!-- CONTRIBUTION -->
+
 <!-- CONTRIBUTION -->
 <h2 id="contributions">:small_orange_diamond: Team Contributions</h2>
 
