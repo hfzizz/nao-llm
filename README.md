@@ -39,14 +39,14 @@ This project aims to enhance the NAO Robot's interaction capabilities by integra
 <h2 id="overview"> :cloud: Overview</h2>
 
 <p align="justify"> 
-<ul>Goal: 
+<ul><b>Goal:</b> 
   <li>To develop a communication system for the NAO Robot, enabling it to process speech, interpret emotional context, and respond in Malay. The system allows the robot to engage in meaningful interactions, perform contextual actions, and carry out commands. </li>
 </ul>
 
 <ul>
-Team:
-<li>Hafiz: Responsible for communication with the NAO Robot, including robot API integration, speech-to-text, text-to-speech, and body control for executing actions. </li>
-<li>Gani & Edric: Focus on integrating the LLM, handling contextual understanding, and developing AI-driven conversation flows for a responsive and contextually aware experience. </li>
+<b>Team:</b>
+<li><b>Hafiz:</b> Responsible for communication with the NAO Robot, including robot API integration, speech-to-text, text-to-speech, and body control for executing actions. </li>
+<li><b>Gani & Edric:</b> Focus on integrating the LLM, handling contextual understanding, and developing AI-driven conversation flows for a responsive and contextually aware experience. </li>
 </ul>
 </p>
 
