@@ -147,7 +147,7 @@ This project was originally inspired by <a href="https://github.com/fabianbossha
     "instruction": "What is the capital of France?",
     "input": "",
     "output": "The capital of France is Paris."
-  },
+  }
 ]
 </code></pre>
   <li>Run the flask application</li>
