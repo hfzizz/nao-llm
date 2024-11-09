@@ -3,11 +3,11 @@ message: "If you use this software, please cite it as below."
 type: software
 authors:
   - family-names: Hafiz
-    given-names: Izzuddin
- - family-names: Edric
-    given-names: Hii
- - family-names: Gani
-    given-names: Mohamed
+  - given-names: Izzuddin
+  - family-names: Edric
+  - given-names: Hii
+  - family-names: Gani
+  - given-names: Mohamed
 title: "NAO-LLM"
 year: 2024
 url: "https://github.com/hfzizz/nao-llm"
