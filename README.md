@@ -103,15 +103,15 @@ This project was originally inspired by <a href="https://github.com/fabianbossha
 <h3>Scraping and Fine-Tune Model</h3>
 <ol>
     <li>
-      <strong>Install Dependencies</strong>:To begin using Scrapy and fine-tuning your model, make sure your virtual environment is activated. Then, navigate to the requirements folder and run the following command
+      <strong>Install Dependencies</strong>:To begin using Scrapy and fine-tuning your model, make sure your virtual environment is activated. Then, navigate to the requirements folder and run the following command:
       <pre><code> pip install -r requirements_RAG.txt </code></pre>
     </li>
     <li>
-      <strong>Scraping the Website</strong>:To start scraping run the following command
+      <strong>Scraping the Website</strong>:To start scraping run the following command:
       <pre><code>scrapy crawl website_scraper -o all_text_data.json </code></pre>
     </li>
     <li>
-      <strong>FineTune Ollama Model</strong>:To start finetuning the model.Navigate to the FineTune/scripts folder and run the following command
+      <strong>FineTune Ollama Model</strong>:To begin fine-tuning the model, navigate to the FineTune/scripts folder and run the following command:
       <pre><code>python fineTunellama.py</code></pre>
     </li>
 </ol>
