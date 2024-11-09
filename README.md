@@ -140,7 +140,7 @@ This project was originally inspired by <a href="https://github.com/fabianbossha
     <pre><code> venv\Scripts\activate </code></pre>
   <li>Install Required Dependencies:</li>
     <pre><code> pip install -r requirements_RAG.txt </code></pre>
-  <li>The dataset has been prepared and is located in fineTune/scripts/datasets.json. However, if you wish to contribute additional data, please follow the template provided below:/li>
+  <li>The dataset has been prepared and is located in fineTune/scripts/datasets.json. However, if you wish to contribute additional data, please follow the template provided below:</li>
     <pre><code>
 [
   {
@@ -155,7 +155,7 @@ This project was originally inspired by <a href="https://github.com/fabianbossha
     <li>You should see output indicating that the Flask server is running:</li>
     <pre><code> Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)</code></pre>
   <li>Testing Flask Application in Postman</li>
-      <li>Head over to Postman and create a new Post request.</li>
+      <li>Head over to <a href="https://www.postman.com/">Postman</a> and create a new Post request.</li>
       <li>Set the URL to the Flask server endpoint:</li>
           <pre><code> http://127.0.0.1:5000/chat </code></pre>
       <li>Set the Request Type to POST.</li>
