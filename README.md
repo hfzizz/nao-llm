@@ -116,6 +116,9 @@ This project was originally inspired by <a href="https://github.com/fabianbossha
     <li>
       <strong>Scraping the Website</strong>:To start scraping run below command line
       <pre><code>scrapy crawl website_scraper -o all_text_data.json </code></pre>
+      <strong>FineTune Ollama Model</strong>:To start finetuning naviagte to the FineTune/scripts folder and run the command line below
+      <pre><code>python fineTuneilama.py</code></pre>
+      
     </li>
 </ol>
 
