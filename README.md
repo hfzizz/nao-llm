@@ -58,6 +58,8 @@ This project aims to enhance the NAO Robot's interaction capabilities by integra
 <ul>
   <li><b>nao_talk.py</b> - This script handles interaction with the NAO robot, including text-to-speech, audio player, and running behavior/action. It utilizes the NAOqi framework to manage robot operations.</li>
   <li><b>pc_sr.py</b> - This script operates independently, handling speech recognition from PC's Mic and processing the recognized text with LLM. It then sends LLM generated response to the server component.</li>
+  <li><b>fineTuneilama.py</b> - This script is designed to fine-tune Ollama 3.2 by further training it on our custom dataset.</li>
+  
 </ul>
 
 <h3>Some other useful files</h3>
@@ -66,6 +68,7 @@ This project aims to enhance the NAO Robot's interaction capabilities by integra
   <li><b>malaytts.py</b> - Same like pc_sr.py but this uses malaya-speech as the TTS.</li>
   <li><b>installed_behaviours.py</b> - Get all the installed behaviours on NAO.</li>
   <li><b>test_behaviour.py</b> - Testing the installed behaviour on NAO.</li>
+  <li><b>text_extractor.py</b> - For web scraping to extract data.</li>
   <li><b>command_mapping.txt</b> - Action-Command mapping.</li>
   <li><b>emotion_mapping.txt</b> - Action-Emotion mapping.</li>
 </ul>
