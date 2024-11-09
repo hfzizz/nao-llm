@@ -111,6 +111,15 @@ This project was originally inspired by <a href="https://github.com/fabianbossha
        (Optional, only if using Whisper) Install NVIDIA libraries such as cuBLAS and cuDNN. can refer <a href="https://github.com/SYSTRAN/faster-whisper">here</a>
 </ol>
 
+<h3>Installation and Running</h3>
+<ol>
+    <li>
+      <strong>Scraping the Website</strong>:This script is a Scrapy Spider designed to crawl and scrape data from a list of websites.To scrape the website run below command line
+      <pre><code>scrapy crawl website_scraper -o all_text_data.json </code></pre>
+    </li>
+</ol>
+
+
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 
