@@ -39,7 +39,8 @@ This project aims to enhance the NAO Robot's interaction capabilities by integra
 <h2 id="overview"> :cloud: Overview</h2>
 
 <p align="justify"> 
-<ul>Goal: To develop a communication system for the NAO Robot, enabling it to process speech, interpret emotional context, and respond in Malay. The system allows the robot to engage in meaningful interactions, perform contextual actions, and carry out commands.
+<ul>Goal: 
+  <li>To develop a communication system for the NAO Robot, enabling it to process speech, interpret emotional context, and respond in Malay. The system allows the robot to engage in meaningful interactions, perform contextual actions, and carry out commands. </li>
 </ul>
 
 <ul>
