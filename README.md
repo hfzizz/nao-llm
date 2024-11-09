@@ -91,8 +91,8 @@ This project was originally inspired by <a href="https://github.com/fabianbossha
 </ul>
 
 <h3>Setup</h3>
+<p>Setting up the server component :</p>
 <ol>
-  <p>Setting up the server component:</p>
   <li>Install the <a href="https://www.aldebaran.com/en/support/nao-6/downloads-softwares">NAO Python SDK</a>: Follow the instructions <a href="https://support.aldebaran.com/support/solutions/articles/80001017327-python-sdk-installation-guide">here</a> to install the NAO Python SDK.</li>
   <li><strong>Install Local LLM</strong>: We use <a href="https://ollama.com/download">Ollama</a> in this case we use llama3.2:1B</li>
   <li><strong>(Optional) Only if using Whisper:</strong> Install NVIDIA libraries such as cuBLAS and cuDNN. can refer <a href="https://github.com/SYSTRAN/faster-whisper">here</a></li>
