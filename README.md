@@ -98,7 +98,7 @@ This project was originally inspired by <a href="https://github.com/fabianbossha
         <a href="requirements.txt">here</a>.
     </li>
   <li>
-        <strong>Install Local LLM</strong>: We use <a href="https://ollama.com/download">Ollama</a> in this case (llama3.2:1B)
+        <strong>Install Local LLM</strong>: We use <a href="https://ollama.com/download">Ollama</a> in this case we use llama3.2:1B
     </li>
     <li>
         <strong>Install Dependencies</strong>: Ensure all required Python libraries are installed in your environments.
