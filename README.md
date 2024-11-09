@@ -19,7 +19,7 @@ This project focuses on integrating a fine-tuned model with Retrieval-Augmented 
     <li><a href="#overview"> ➤ Overview</a></li>
     <li><a href="#project-files-description"> ➤ Project Files Description</a></li>
     <li><a href="#getting-started"> ➤ Getting Started</a></li>
-    <li><a href="#contributions"> ➤ Contributions</a></li>
+    <li><a href="#contributions"> ➤ Team Contributions</a></li>
     <li><a href="#aknowlegdements"> ➤ Acknowledgement</a></li>
   </ol>
 </details>
