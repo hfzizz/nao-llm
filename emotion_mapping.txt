@@ -1,0 +1,9 @@
+# This file is used to map the emotion word to the behavior name. Can add more emotions if needed.
+
+animations/Stand/Emotions/Negative/Angry_1: anger
+animations/Stand/Emotions/Neutral/Annoyed_1: disgust	
+animations/Stand/Emotions/Negative/Fear_1: fear	
+animations/Stand/Emotions/Positive/Happy_1: joy	
+animations/Stand/Emotions/Neutral/Innocent_1: neutral	
+animations/Stand/Emotions/Negative/Sad_1: sadness	
+animations/Stand/Emotions/Positive/Amused_1: surprise

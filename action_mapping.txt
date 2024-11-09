@@ -1,0 +1,4 @@
+# This file is used to map the behavior name to the action name.Can add more actions if needed.
+
+dialog_hello/bhr_wave: wave
+animations/Stand/Gestures/Salute_1: salute
