@@ -160,15 +160,16 @@ This project was originally inspired by <a href="https://github.com/fabianbossha
           <pre><code> http://127.0.0.1:5000/chat </code></pre>
       <li>Set the Request Type to POST.</li>
       <li>Add the Request Body in JSON format, with a message key containing the text that the user wants to send to the chatbot.</li>
-          <pre><code>{
-                        "message": "Hello Nao, how are you?"
-                      }
+          <pre><code>
+            {
+               "message": "Hello Nao, how are you?"
+            }
           </code></pre>
        <li>Send the Request by clicking the "Send" button.</li>
         <li>The response should look something like this:</li>
             <pre><code>
               {
-                "response": "Nao: Hello! I am doing well, thank you for asking!"
+                 "response": "Nao: Hello! I am doing well, thank you for asking!"
               }
             </code></pre> 
 </ol>
