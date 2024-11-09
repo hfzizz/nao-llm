@@ -107,11 +107,11 @@ This project was originally inspired by <a href="https://github.com/fabianbossha
       <pre><code> pip install -r requirements_RAG.txt </code></pre>
     </li>
     <li>
-      <strong>Scraping the Website</strong>:To start scraping run below command line
+      <strong>Scraping the Website</strong>:To start scraping run the following command
       <pre><code>scrapy crawl website_scraper -o all_text_data.json </code></pre>
     </li>
     <li>
-      <strong>FineTune Ollama Model</strong>:To start finetuning the model.Navigate to the FineTune/scripts folder and run the command line below
+      <strong>FineTune Ollama Model</strong>:To start finetuning the model.Navigate to the FineTune/scripts folder and run the following command
       <pre><code>python fineTunellama.py</code></pre>
     </li>
 </ol>
