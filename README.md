@@ -56,15 +56,17 @@ Team:
 
 <ul>
   <li><b>nao_talk.py</b> - This script handles interaction with the NAO robot, including text-to-speech, audio player, and running behavior/action. It utilizes the NAOqi framework to manage robot operations.</li>
-  <li><b>pc_w_malay_sr.py</b> - This script operates independently, handling speech recognition from PC's Mic and processing the recognized text with LLM. It then sends LLM generated response to the server component.</li>
+  <li><b>pc_sr.py</b> - This script operates independently, handling speech recognition from PC's Mic and processing the recognized text with LLM. It then sends LLM generated response to the server component.</li>
 </ul>
 
-<h3>Some other usefull files</h3>
+<h3>Some other useful files</h3>
 <ul>
-  <li><b>Whispertts.py</b> - Same like pc_w_malay_sr.py but this uses Whisper as the TTS</li>
-  <li><b>Malaytts.py</b> - Same like pc_w_malay_sr.py but this uses malaya-speech as the TTS.</li>
+  <li><b>whispertts.py</b> - Same like pc_sr.py but this uses Whisper as the TTS</li>
+  <li><b>malaytts.py</b> - Same like pc_sr.py but this uses malaya-speech as the TTS.</li>
   <li><b>installed_behaviours.py</b> - Get all the installed behaviours on NAO.</li>
-  <li><b>Testbehaviour.py</b> - Testing the installed behaviour on NAO.</li>
+  <li><b>test_behaviour.py</b> - Testing the installed behaviour on NAO.</li>
+  <li><b>command_mapping.txt</b> - Action-Command mapping.</li>
+  <li><b>emotion_mapping.txt</b> - Action-Emotion mapping.</li>
 </ul>
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
@@ -79,7 +81,7 @@ This project was originally inspired by <a href="https://github.com/fabianbossha
 <ul>
   <li>NAO Robot</li>
   <li>NAO Python SDK</li>
-  <li>Python 3.x environment (for pc_w_malay_sr.py)</li>
+  <li>Python 3.x environment (for pc_sr.py)</li>
   <li>Python 2.7 environment (for nao_talk.py)</li>
   <li>Any Local LLM (We use Ollama)</li>
 </ul>
