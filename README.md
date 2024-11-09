@@ -81,7 +81,7 @@ This project aims to enhance the NAO Robot's interaction capabilities by integra
 <h2 id="Workflow"> 🔄 Workflow</h2>
 
 <p align="center"> 
-  <img src="pic/NAO_LLM.png" alt="workflow" width="720px" height="620px">
+  <img src="pic/NAO_LLM.png" alt="workflow" width="1920px" height="620px">
 </p>
 
 
