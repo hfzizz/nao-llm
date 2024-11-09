@@ -103,30 +103,45 @@ This project was originally inspired by <a href="https://github.com/fabianbossha
 <h3>Scraping and Fine-Tune Model</h3>
 <ol>
     <li>
-      <strong>Install Dependencies</strong>:To begin using Scrapy and fine-tuning your model, make sure your virtual environment is activated. Then, navigate to the requirements folder and run the following command:
+      <strong>Install Dependencies</strong>: To begin using Scrapy and fine-tuning your model, make sure your virtual environment is activated. Then, navigate to the requirements folder and run the following command:
       <pre><code> pip install -r requirements_RAG.txt </code></pre>
     </li>
     <li>
-      <strong>Scraping the Website</strong>:To start scraping run the following command:
+      <strong>Scraping the Website</strong>: To start scraping run the following command:
       <pre><code>scrapy crawl website_scraper -o all_text_data.json </code></pre>
     </li>
     <li>
-      <strong>FineTune Ollama Model</strong>:To begin fine-tuning the model, navigate to the FineTune/scripts folder and run the following command:
+      <strong>FineTune Ollama Model</strong>: To begin fine-tuning the model, navigate to the FineTune/scripts folder and run the following command:
       <pre><code>python fineTunellama.py</code></pre>
     </li>
 </ol>
 
 <h3>NAO-LLM</h3>
+<p>Setting up the server component :</p>
 <ol>
     <li> Setup python virtual environment for nao_talk.py</li>
       <pre><code>python -m venv venv27 </code></pre>
     <li> Activate the virtual environment </li>
       <pre><code> venv27\Scripts\activate </code></pre>
-    <li> Install dependencies. Make sure you cd to requirements folder </li>
+    <li> Install dependencies. Make sure you cd to requirements folder. </li>
       <pre><code> pip install -r requirements_venv27.txt </code></pre>
+    <li> Make sure to change your_nao_ip and your_nao_port accordingly. </li>
     <li> Start the server </li>
       <pre><code>python nao_talk.py</code></pre>
 </ol>
+<p>Setting up the client component :</p>
+<ol>
+    <li> Setup python virtual environment for pc_sr.py</li>
+      <pre><code>py -m venv venv3 </code></pre>
+    <li> Activate the virtual environment </li>
+      <pre><code> venv3\Scripts\activate </code></pre>
+    <li> Install dependencies. Make sure you cd to requirements folder </li>
+      <pre><code> pip install -r requirements_venv3.txt </code></pre>
+    <li> Make sure to change nao_username, nao_password, your_nao_ip and your_nao_port accordingly. </li>
+    <li> Start the client component</li>
+      <pre><code>python pc_sr.py</code></pre>
+</ol>
+
 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
