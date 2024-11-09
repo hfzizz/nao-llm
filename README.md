@@ -19,6 +19,7 @@ This project focuses on integrating a fine-tuned model with Retrieval-Augmented 
     <li><a href="#overview"> ➤ Overview</a></li>
     <li><a href="#project-files-description"> ➤ Project Files Description</a></li>
     <li><a href="#getting-started"> ➤ Getting Started</a></li>
+    <li><a href="#workflow"> ➤ Workflow</a></li>
     <li><a href="#contributions"> ➤ Team Contributions</a></li>
     <li><a href="#aknowlegdements"> ➤ Acknowledgement</a></li>
   </ol>
@@ -73,6 +74,17 @@ This project aims to enhance the NAO Robot's interaction capabilities by integra
   <li><b>command_mapping.txt</b> - Action-Command mapping.</li>
   <li><b>emotion_mapping.txt</b> - Action-Emotion mapping.</li>
 </ul>
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+<!-- WORKFLOW -->
+<h2 id="Workflow"> 🔄 Workflow</h2>
+
+<p align="center"> 
+  <img src="pic/NAO-LLM.png" alt="workflow" width="1920px" height="1080px">
+</p>
+
+
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
