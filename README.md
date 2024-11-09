@@ -92,23 +92,12 @@ This project was originally inspired by <a href="https://github.com/fabianbossha
 
 <h3>Setup</h3>
 <ol>
-    <li>
-        Install the <a href="https://www.aldebaran.com/en/support/nao-6/downloads-softwares">NAO Python SDK</a>: Follow the instructions 
-        <a href="https://support.aldebaran.com/support/solutions/articles/80001017327-python-sdk-installation-guide">here</a> 
-        to install the NAO Python SDK.
+  <li>Install the <a href="https://www.aldebaran.com/en/support/nao-6/downloads-softwares">NAO Python SDK</a>: Follow the instructions <a href="https://support.aldebaran.com/support/solutions/articles/80001017327-python-sdk-installation-guide">here</a> to install the NAO Python SDK.</li>
+  <li><strong>Install Local LLM</strong>: We use <a href="https://ollama.com/download">Ollama</a> in this case we use llama3.2:1B</li>
+  <li><strong>Install Dependencies</strong>: Ensure all required Python libraries are installed in your environments.</li>
+  <li><strong>(Optional) Only if using Whisper:</strong> Install NVIDIA libraries such as cuBLAS and cuDNN. can refer <a href="https://github.com/SYSTRAN/faster-whisper">here</a></li>
+  <li><strong>Python Environments</strong>: Detailed, step-by-step instructions for setting up these environments are provided in the following sections.</a>.
     </li>
-    <li>
-        <strong>Python Environments</strong>: Create two separate Python environments, one for the server component and one for the client component. The server component requires Python 2.7, while the client component requires Python 3.x. The specific Python versions and library versions used for each component are listed 
-        <a href="requirements.txt">here</a>.
-    </li>
-  <li>
-        <strong>Install Local LLM</strong>: We use <a href="https://ollama.com/download">Ollama</a> in this case we use llama3.2:1B
-    </li>
-    <li>
-        <strong>Install Dependencies</strong>: Ensure all required Python libraries are installed in your environments.
-    </li>
-  <li>
-       (Optional, only if using Whisper) Install NVIDIA libraries such as cuBLAS and cuDNN. can refer <a href="https://github.com/SYSTRAN/faster-whisper">here</a>
 </ol>
 
 <h3>Installation and Running</h3>
@@ -119,6 +108,7 @@ This project was originally inspired by <a href="https://github.com/fabianbossha
       <strong>FineTune Ollama Model</strong>:To start finetuning the model.Navigate to the FineTune/scripts folder and run the command line below
       <pre><code>python fineTuneilama.py</code></pre>
     </li>
+  
 </ol>
 
 
