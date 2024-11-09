@@ -171,12 +171,14 @@ This project was originally inspired by <a href="https://github.com/fabianbossha
   <li>Collected data on the Malay language to assess the potential for training the LLM to generate responses in Malay.</li>
 </ul>
 
-<h3>Training Process:</h3>
-<p>To fine-tune the LLM, we gathered specialized datasets that included conversational exchanges related to our project topics (SDS, UBD, robotics, AI, Brunei) to improve the model's ability to generate relevant and coherent responses.</p>
-<p>The training was carried out using the LlamaForCausalLM model, which was trained using a custom dataset of dialogues and interactions, ensuring that the model could generate contextually appropriate responses across multiple conversations.</p>
-<p>We utilized the FineTune scripts to train the model, with the dataset tokenized and processed to fit the model's input requirements.</p>
-<p>The training involved setting specific parameters, including batch size, number of epochs, and checkpoint intervals. The model was fine-tuned to balance between performance and training efficiency.</p>
-<p>The training was executed with dynamic checkpointing to save progress and prevent loss of model training data. The final trained model was evaluated and saved for deployment.</p>
+<p><strong>Training process:</strong></p>
+<ul>
+<li>To fine-tune the LLM, we gathered specialized datasets that included conversational exchanges related to our project topics (SDS, UBD, robotics, AI, Brunei) to improve the model's ability to generate relevant and coherent responses.</li>
+<li>The training was carried out using the LlamaForCausalLM model, which was trained using a custom dataset of dialogues and interactions, ensuring that the model could generate contextually appropriate responses across multiple conversations.</li>
+<li></li>We utilized the FineTune scripts to train the model, with the dataset tokenized and processed to fit the model's input requirements.</li>
+<li>The training involved setting specific parameters, including batch size, number of epochs, and checkpoint intervals. The model was fine-tuned to balance between performance and training efficiency.</li>
+<li>The training was executed with dynamic checkpointing to save progress and prevent loss of model training data. The final trained model was evaluated and saved for deployment.</li>
+</ul>
 
 
 
