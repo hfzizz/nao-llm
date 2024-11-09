@@ -153,13 +153,14 @@ This project was originally inspired by <a href="https://github.com/fabianbossha
 <p><strong>Student 1 (Hafiz):</strong></p>
 <ul>
   <li>Established wireless communication between PC and NAO, using Flask to bridge Python 2.7 (NAOqi) and Python 3 (LLM) environments for seamless interaction.</li>
+  <li> Retrieve all installed behaviors/actions on NAO using <code>installed_behavior.py</code>, and test each behavior with <code>test_behavior.py</code>.</li>
   <li>Mapped action triggers from speech by referencing <code>command_mapping.txt</code>, using the <code>find_behavior()</code> function to identify and initiate specific behaviors.</li>
   <li>Implemented advanced gesture and movement synchronization with spoken responses, such as waving when saying "Hello!"—managed with threading for smooth timing.</li>
   <li>Worked collaboratively with Students 2 and 3 to ensure body behaviors align with conversational context, using <code>emotion_mapping.txt</code> to trigger context-appropriate actions.</li>
   <li>Developed a text-to-speech system that enables NAO to speak in Malay by generating audio with gTTS and transferring it via SSH for playback.</li>
-  <li>Both Malay and English support (pc_sr.py)</li>
-  <li>Local English TTS (whisphertts.py).</li>
-  <li>Local Malay TTS (malaytts.py).</li>
+  <li>Both Malay and English support in <code>pc_sr.py</code></li>
+  <li>Local English TTS in <code>whisphertts.py</code>.</li>
+  <li>Local Malay TTS in <code> malaytts.py </code>.</li>
 </ul>
 
 <p><strong>Student 2 & Student 3 (Gani & Edric):</strong></p>
