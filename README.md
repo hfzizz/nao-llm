@@ -132,13 +132,13 @@ This project was originally inspired by <a href="https://github.com/fabianbossha
 
 <h3>Retrieval Augmented Generation(RAG)</h3>
 <ol>
-  <li> Create a python virtual environment for RAG3.0.py</li>
+  <li> Create a python virtual environment for RAG3.0.py:</li>
     <pre><code> python -m venv venv </code></pre>
-  <li>Activate the Virtual Environment</li>
+  <li>Activate the Virtual Environment:</li>
     <pre><code> venv\Scripts\activate </code></pre>
-  <li>Activate the Virtual Environment</li>
+  <li>Activate the Virtual Environment:</li>
     <pre><code> venv\Scripts\activate </code></pre>
-  <li>Install Required Dependencies</li>
+  <li>Install Required Dependencies:</li>
     <pre><code> pip install -r requirements_RAG.txt </code></pre>
   <li>The dataset has been prepared and is located in fineTune/scripts/datasets.json. However, if you wish to contribute additional data, please follow the template provided below:/li>
     <pre><code>
@@ -150,16 +150,16 @@ This project was originally inspired by <a href="https://github.com/fabianbossha
   }
 ]
 </code></pre>
-  <li>Run the flask application</li>
+  <li>Run the flask application:</li>
     <pre><code> python RAG3.0.py </code></pre>
     <li>You should see output indicating that the Flask server is running:</li>
     <pre><code> Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)</code></pre>
   <li>Testing Flask Application in Postman</li>
-      <li>Head over to Postman and create a new Post request</li>.
+      <li>Head over to Postman and create a new Post request.</li>
       <li>Set the URL to the Flask server endpoint:</li>
           <pre><code> http://127.0.0.1:5000/chat </code></pre>
       <li>Set the Request Type to POST.</li>
-      <li>Add the Request Body in JSON format, with a message key containing the text that the user wants to send to the chatbot.</li>
+      <li>Add the Request Body in JSON format, with a message key containing the text that the user wants to send to the chatbot:</li>
           <pre><code>
             {
                "message": "Hello Nao, how are you?"
