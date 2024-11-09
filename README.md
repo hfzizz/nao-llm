@@ -94,21 +94,31 @@ This project was originally inspired by <a href="https://github.com/fabianbossha
 <ol>
   <li>Install the <a href="https://www.aldebaran.com/en/support/nao-6/downloads-softwares">NAO Python SDK</a>: Follow the instructions <a href="https://support.aldebaran.com/support/solutions/articles/80001017327-python-sdk-installation-guide">here</a> to install the NAO Python SDK.</li>
   <li><strong>Install Local LLM</strong>: We use <a href="https://ollama.com/download">Ollama</a> in this case we use llama3.2:1B</li>
-  <li><strong>Install Dependencies</strong>: Ensure all required Python libraries are installed in your environments.</li>
   <li><strong>(Optional) Only if using Whisper:</strong> Install NVIDIA libraries such as cuBLAS and cuDNN. can refer <a href="https://github.com/SYSTRAN/faster-whisper">here</a></li>
-  <li><strong>Python Environments</strong>: Detailed, step-by-step instructions for setting up these environments are provided in the following sections.</a>.
+  <li><strong>Python Environments and Dependencies</strong>: Detailed, step-by-step instructions for setting up these environments and installing dependencies are provided in the following sections.</a>.
     </li>
 </ol>
 
-<h3>Installation and Running</h3>
+<h3>Scraping and Fine-Tune Model</h3>
 <ol>
     <li>
       <strong>Scraping the Website</strong>:To start scraping run below command line
       <pre><code>scrapy crawl website_scraper -o all_text_data.json </code></pre>
       <strong>FineTune Ollama Model</strong>:To start finetuning the model.Navigate to the FineTune/scripts folder and run the command line below
-      <pre><code>python fineTuneilama.py</code></pre>
+      <pre><code>python fineTunellama.py</code></pre>
     </li>
-  
+</ol>
+
+<h3>NAO-LLM</h3>
+<ol>
+    <li> Setup python virtual environment for nao_talk.py</li>
+      <pre><code>python -m venv venv27 </code></pre>
+    <li> Activate the virtual environment </li>
+      <pre><code>venv27\Scripts\activate</pre>
+    <li> Install dependencies. Make sure you cd to requirements folder </li>
+      <pre><code>pip install -r requirements_venv27.txt</code></pre>
+    <li> Start the server </li>
+      <pre><code>python nao_talk.py</code></pre>
 </ol>
 
 
