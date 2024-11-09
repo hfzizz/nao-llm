@@ -88,6 +88,7 @@ This project was originally inspired by <a href="https://github.com/fabianbossha
   <li>Python 3.x environment (for pc_sr.py)</li>
   <li>Python 2.7 environment (for nao_talk.py)</li>
   <li>Any Local LLM (We use Ollama)</li>
+  <li>Postman</li>
 </ul>
 
 <h3>Setup</h3>
@@ -97,7 +98,7 @@ This project was originally inspired by <a href="https://github.com/fabianbossha
   <li><strong>Install Local LLM</strong>: We use <a href="https://ollama.com/download">Ollama</a> in this case we use llama3.2:1B</li>
   <li><strong>(Optional) Only if using Whisper:</strong> Install NVIDIA libraries such as cuBLAS and cuDNN. can refer <a href="https://github.com/SYSTRAN/faster-whisper">here</a></li>
   <li><strong>Python Environments and Dependencies</strong>: Detailed, step-by-step instructions for setting up these environments and installing dependencies are provided in the following sections.</a>.
-    </li>
+  <li><strong>Postman</strong>: Use <a href="https://www.postman.com/">Postman</a> for API testing and debugging.</li>
 </ol>
 
 <h3>Scraping and Fine-Tune Model</h3>
