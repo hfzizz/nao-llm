@@ -7,6 +7,7 @@ This project focuses on integrating a fine-tuned model with Retrieval-Augmented 
 
 <h1 align="center"> NAO LLM </h1>
 <h3 align="center">  ZA 3201- Intelligent System Lab </h3>
+<h4 align="center">  Human-Robot Interaction with NAO and LLM </h4>
 <h5 align="center"> AIR-AAI Group Project - <a href="https://ubd.edu.bn/">Universiti Brunei Darussalam</a> </h5>
 
 <!-- TABLE OF CONTENTS -->
