@@ -137,8 +137,6 @@ This project was originally inspired by <a href="https://github.com/fabianbossha
     <pre><code> python -m venv venv </code></pre>
   <li>Activate the Virtual Environment:</li>
     <pre><code> venv\Scripts\activate </code></pre>
-  <li>Activate the Virtual Environment:</li>
-    <pre><code> venv\Scripts\activate </code></pre>
   <li>Install Required Dependencies:</li>
     <pre><code> pip install -r requirements_RAG.txt </code></pre>
   <li>The dataset has been prepared and is located in fineTune/scripts/datasets.json. However, if you wish to contribute additional data, please follow the template provided below:</li>
