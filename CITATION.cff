@@ -4,6 +4,10 @@ type: software
 authors:
   - family-names: Hafiz
     given-names: Izzuddin
+ - family-names: Edric
+    given-names: Hii
+ - family-names: Gani
+    given-names: 
 title: "NAO-LLM"
 year: 2024
 url: "https://github.com/hfzizz/nao-llm"
