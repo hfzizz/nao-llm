@@ -152,11 +152,11 @@ This project was originally inspired by <a href="https://github.com/fabianbossha
 
 <p><strong>Student 1 (Hafiz):</strong></p>
 <ul>
-  <li>Established wireless communication between PC and NAO, integrating the language model (LLM) for seamless interaction.</li>
-  <li>Implemented advanced gesture and movement synchronization with spoken responses, such as waving when saying Hello!.</li>
-  <li>Created a system that detects words from user input to trigger appropriate body behaviors, ensuring that the robot confirms the user’s goal before performing any movements. (e.g., "Can you salute?" to make the robot do salute action) </li>
-  <li>Worked collaboratively with the team to ensure body behaviors are accurately triggered based on conversational context.</li>
-  <li>Developed a text-to-speech system that enables NAO to speak in Malay.</li>
+  <li>Established wireless communication between PC and NAO, using Flask to bridge Python 2.7 (NAOqi) and Python 3 (LLM) environments for seamless interaction.</li>
+  <li>Mapped action triggers from speech by referencing <code>command_mapping.txt</code>, using the <code>find_behavior()</code> function to identify and initiate specific behaviors.</li>
+  <li>Implemented advanced gesture and movement synchronization with spoken responses, such as waving when saying "Hello!"—managed with threading for smooth timing.</li>
+  <li>Worked collaboratively with Students 2 and 3 to ensure body behaviors align with conversational context, using <code>emotion_mapping.txt</code> to trigger context-appropriate actions.</li>
+  <li>Developed a text-to-speech system that enables NAO to speak in Malay by generating audio with gTTS and transferring it via SSH for playback.</li>
   <li>Both Malay and English support (pc_sr.py)</li>
   <li>Local English TTS (whisphertts.py).</li>
   <li>Local Malay TTS (malaytts.py).</li>
