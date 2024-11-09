@@ -120,9 +120,9 @@ This project was originally inspired by <a href="https://github.com/fabianbossha
   <li>Created a system that detects words from user input to trigger appropriate body behaviors, ensuring that the robot confirms the user’s goal before performing any movements. (e.g., "Can you salute?" to make the robot do salute action) </li>
   <li>Worked collaboratively with the team to ensure body behaviors are accurately triggered based on conversational context.</li>
   <li>Developed a text-to-speech system that enables NAO to speak in Malay.</li>
-  <li>Local English TTS (Whisphertts.py).</li>
-  <li>Local Malay TTS (Malaytts.py).</li>
-  <li>Both Malay and English support (pc_w_malay_sr.py)</li>
+  <li>Both Malay and English support (pc_sr.py)</li>
+  <li>Local English TTS (whisphertts.py).</li>
+  <li>Local Malay TTS (malaytts.py).</li>
 </ul>
 
 <p><strong>Student 2 & Student 3 (Gani & Edric):</strong></p>
