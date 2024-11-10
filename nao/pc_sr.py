@@ -27,6 +27,121 @@ your_nao_password = "your_nao_password"
 # Emotion model
 emotion_model = pipeline("text-classification", model="michellejieli/emotion_text_classifier")
 
+# Initialize SBERT model for embedding
+sbert_model = SentenceTransformer('all-MiniLM-L6-v2')  # Lightweight SBERT model; can change as needed
+
+
+# Load and preprocess dataset using SBERT and Ollama for embeddings (only instructions)
+def load_and_preprocess_data(dataset_path, model_name='llama3.2'):
+    with open(dataset_path) as f:
+        data = json.load(f)
+
+    preprocessed_data = []
+    for item in data:
+        instruction = item["instruction"]
+        output = item["output"]
+        
+        # Use SBERT for embedding
+        sbert_embedding = sbert_model.encode(instruction)
+
+        # Optionally use Ollama for embedding as well
+        embedding_response = ollama.embed(model=model_name, input=instruction)
+        ollama_embedding = embedding_response.get('embeddings', [None])[0]
+
+        preprocessed_data.append({
+            'instruction': instruction,
+            'output': output,
+            'sbert_embedding': sbert_embedding,
+            'ollama_embedding': ollama_embedding
+        })
+    return preprocessed_data
+
+
+
+# Function to compute combined similarity
+def combined_similarity(query_embedding, data_embedding, ollama_weight=0.5, sbert_weight=0.5):
+    sbert_similarity = cosine_similarity([query_embedding['sbert']], [data_embedding['sbert']])[0][0]
+    ollama_similarity = cosine_similarity([query_embedding['ollama']], [data_embedding['ollama']])[0][0] if data_embedding['ollama'] is not None else 0
+    return ollama_weight * ollama_similarity + sbert_weight * sbert_similarity
+
+# Embed query using both SBERT and Ollama
+def embed_query(query, ollama_model_name='llama3.2'):
+    sbert_query_embedding = sbert_model.encode(query)
+    ollama_query_embedding = ollama.embed(model=ollama_model_name, input=query).get('embeddings', [None])[0]
+    return {
+        'sbert': sbert_query_embedding,
+        'ollama': ollama_query_embedding
+    }
+
+# Retrieve top K documents using SBERT and Ollama integration
+def retrieve_top_k(query, preprocessed_data, model_name='llama3.2', k=3):
+    query_embedding = embed_query(query, ollama_model_name=model_name)
+    similarities = [
+        combined_similarity(query_embedding, {
+            'sbert': item['sbert_embedding'],
+            'ollama': item['ollama_embedding']
+        }) for item in preprocessed_data
+    ]
+    
+    top_k_indices = np.argsort(similarities)[-k:]
+    top_k_documents = [preprocessed_data[i] for i in top_k_indices]
+
+    # Optional re-ranking step
+    re_ranked_documents = sorted(
+        top_k_documents,
+        key=lambda doc: combined_similarity(query_embedding, {
+            'sbert': doc['sbert_embedding'],
+            'ollama': doc['ollama_embedding']
+        }),
+        reverse=True
+    )
+
+    return re_ranked_documents, max(similarities)
+
+
+
+def generate_response(query, top_k_documents, context):
+    # Ensure that doc['output'] is a string (if it's a list, join the elements)
+    doc_context = " ".join([
+        " ".join([str(part) for part in doc['output']]) if isinstance(doc['output'], list) else str(doc['output'])
+        for doc in top_k_documents[:3]
+    ])
+    combined_context = context + "\n" + doc_context
+    prompt = template.format(context=combined_context, question=query)
+
+    # Remove the temperature argument
+    response = ollama.chat(
+        model='llama3.2',
+        messages=[
+            {'role': 'system', 'content': 'You are Nao, a friendly chatbot from Universiti Brunei Darussalam.'},
+            {'role': 'user', 'content': prompt}
+        ]
+    )
+    return response['message']['content']
+
+
+# Load and save context from/to files
+def load_context(file_path):
+    if os.path.exists(file_path):
+        with open(file_path, "r") as file:
+            return file.read()
+    return ""
+
+def save_context(context, file_path):
+    with open(file_path, "w") as file:
+        file.write(context)
+
+# Dynamically generate a new context file
+def new_context_file():
+    return f"{CONTEXT_DIR}/{str(uuid.uuid4())}.txt"
+
+# Main Dynamic RAG function
+def dynamic_rag(query, preprocessed_data, context, model_name='llama3.2', top_k=3):
+    top_k_documents, max_similarity = retrieve_top_k(query, preprocessed_data, model_name=model_name, k=top_k)
+    response = generate_response(query, top_k_documents, context)
+    return response
+
+
 # Function to record audio
 def record_audio():
     recognizer = sr.Recognizer()
@@ -225,12 +340,15 @@ def play_audio_on_nao():
 
 # Main function
 if __name__ == "__main__":
+    dataset_path = "your dataset.json path"  # Replace with your dataset path
+    preprocessed_data = load_and_preprocess_data(dataset_path, model_name='llama3.2')  # Initialize preprocessed data for RAG
     conversation_history = []
     system_message = {
         'role': 'system',
         'content': 'You are Nao, a helpful and emotional robot from the School of Digital Sciences at University Brunei Darussalam. Keep responses to 1-2 sentences. IMPORTANT: If the user message is in English, you MUST respond in English. If the user message is in Malay, you MUST respond in Malay.'
     }
     conversation_history.append(system_message)
+    current_context_file = new_context_file()
 
     # Define greeting words
     greeting_words = ['hello', 'hi', 'hey', 'greetings', 'good morning', 'good afternoon', 'good evening']
@@ -242,6 +360,8 @@ if __name__ == "__main__":
             print("Transcribed text: ", recognized_text)
             is_malay = result['is_malay']
             print("Is Malay: ", is_malay)
+            
+            context = load_context(current_context_file)
 
             # Add language indicator to the user message
             language_prefix = "[MALAY]" if is_malay else "[ENGLISH]"
@@ -252,15 +372,17 @@ if __name__ == "__main__":
 
             if is_malay: #malay
                 
-                stream = ollama.chat(
-                    model='llama3.2:1b',
-                    messages=conversation_history,
-                    stream=True,
-                )
+                # stream = ollama.chat(
+                #     model='llama3.2:1b',
+                #     messages=conversation_history,
+                #     stream=True,
+                # )
+                
                 response_text = ""
-                for chunk in stream:
-                    response_text += chunk['message']['content']
-                    print(chunk['message']['content'], end='', flush=True)
+                response_text = rag_generate_response(recognized_text, context)
+                # for chunk in stream:
+                #     response_text += chunk['message']['content']
+                #     print(chunk['message']['content'], end='', flush=True)
 
                 cleaned_response_text = clean_text(response_text)
 
@@ -270,6 +392,9 @@ if __name__ == "__main__":
 
                 # Append Ollama's response to the conversation history
                 conversation_history.append({'role': 'assistant', 'content': cleaned_response_text})
+                context += f"\nUser: {recognized_text}\nNao: {response_text}"
+                save_context(context, current_context_file)
+
                 # For Malay text, use TTS + upload + play approach
                 save_mp3(cleaned_response_text)
                 upload_file_to_nao('response.mp3', your_nao_ip, 22, your_nao_username, your_nao_password)
@@ -305,15 +430,16 @@ if __name__ == "__main__":
 
                         
 
-                    stream = ollama.chat(
-                        model='llama3.2:1b',
-                        messages=conversation_history,
-                        stream=True,
-                    )
+                    # stream = ollama.chat(
+                    #     model='llama3.2:1b',
+                    #     messages=conversation_history,
+                    #     stream=True,
+                    # )
                     response_text = ""
-                    for chunk in stream:
-                        response_text += chunk['message']['content']
-                        print(chunk['message']['content'], end='', flush=True)
+                    response_text = rag_generate_response(recognized_text, context)
+                    # for chunk in stream:
+                    #     response_text += chunk['message']['content']
+                    #     print(chunk['message']['content'], end='', flush=True)
 
                     cleaned_response_text = clean_text(response_text)
                     emotion_response = emotion_model(cleaned_response_text)[0]
