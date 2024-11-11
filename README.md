@@ -58,7 +58,7 @@ This project aims to enhance the NAO Robot's interaction capabilities by integra
 <h2 id="project-files-description"> :floppy_disk: Project Files Description</h2>
 
 <ul>
-  <li><b>FineTune/Script Folder</b> - This folder contains.. .</li>
+  <li><b>FineTune/Script Folder</b> - This folder contains dataset for RAG and scripts for finetuning the ollama model .</li>
   <li><b>Nao Folder</b> - This folder contains all the required script for the interaction with NAO.</li>
   <li><b>Pic Folder</b> - This folder contains pictures for README.</li>
   <li><b>Requirements Folder</b> - This folder contains all the requirements for virtual environments.</li>
