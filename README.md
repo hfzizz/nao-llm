@@ -62,7 +62,7 @@ This project aims to enhance the NAO Robot's interaction capabilities by integra
   <li><b>Nao Folder</b> - This folder contains all the required script for the interaction with NAO.</li>
   <li><b>Pic Folder</b> - This folder contains pictures for README.</li>
   <li><b>Requirements Folder</b> - This folder contains all the requirements for virtual environments.</li>
-  <li><b>Scraper Folder</b> - This folder contains.. .</li>
+  <li><b>Scraper Folder</b> - This folder contains the script to scrape websites.</li>
   <li><b>nao_talk.py</b> - This script handles interaction with the NAO robot, including text-to-speech, audio player, and running behavior/action. It utilizes the NAOqi framework to manage robot operations.</li>
   <li><b>pc_sr.py</b> - This script operates independently, handling speech recognition from PC's Mic and processing the recognized text with LLM. It then sends LLM generated response to the server component.</li>
   <li><b>fineTuneilama.py</b> - This script is designed to fine-tune Ollama 3.2 by further training it on our custom dataset.</li>
